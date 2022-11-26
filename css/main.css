@@ -18,6 +18,7 @@ html {
 }
 
 body {
+  min-height: 100vh;
   font-family: "Cairo", sans-serif;
   font-size: 14px;
 }
@@ -87,6 +88,74 @@ select:focus {
 /* end scrollbar */
 .landing-page {
   height: 100vh;
+}
+
+.top-nav .nav-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+.top-nav .nav-content .icon-holder i, .top-nav .nav-content .icon-holder svg {
+  color: #959597;
+}
+.top-nav .nav-content .icon-holder i.user-account, .top-nav .nav-content .icon-holder svg.user-account {
+  font-size: 40px;
+}
+.top-nav .nav-content .icon-holder i.notification, .top-nav .nav-content .icon-holder svg.notification {
+  font-size: 25px;
+}
+
+.header {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  transition: 0.4s;
+  border-bottom: 1px solid #EFEFF0;
+}
+@media (max-width: 767.98px) {
+  .header {
+    position: fixed !important;
+    bottom: 0;
+    top: auto;
+    border-top: 1px solid #EFEFF0;
+  }
+  .header .main-nav .nav-menu {
+    justify-content: space-around !important;
+  }
+  .header .main-nav .nav-menu .nav-item .nav-link {
+    padding: 6px 20px !important;
+  }
+}
+.header .main-nav .nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
+  flex-grow: 1;
+}
+.header .main-nav .nav-menu .nav-item .nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 14px 16px;
+  color: #AFB1B6;
+  transition: 0.4s;
+}
+.header .main-nav .nav-menu .nav-item .nav-link .nav-icon {
+  font-size: 20px;
+}
+.header .main-nav .nav-menu .nav-item .nav-link .nav-name {
+  font-weight: 500;
+  font-size: 13px;
+}
+.header .main-nav .nav-menu .nav-item .nav-link:hover {
+  color: #19191B;
 }
 
 .landing-swiper {
