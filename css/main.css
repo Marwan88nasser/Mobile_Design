@@ -84,4 +84,47 @@ select:focus {
   -o-border-radius: 50px;
 }
 
-/* end scrollbar *//*# sourceMappingURL=main.css.map */
+/* end scrollbar */
+.landing-page {
+  height: 100vh;
+}
+
+.landing-swiper {
+  height: 100vh;
+}
+.landing-swiper .swiper-wrapper .swiper-slide {
+  height: 100%;
+}
+.landing-swiper .swiper-wrapper .swiper-slide .box-bg {
+  height: 65%;
+  background-color: #3792e5;
+}
+.landing-swiper .swiper-wrapper .swiper-slide .box-text {
+  height: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.landing-swiper .swiper-wrapper .swiper-slide .box-text h4 {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 53.12px;
+}
+.landing-swiper .swiper-wrapper .swiper-slide .box-text p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26.56px;
+  letter-spacing: 0.08px;
+}
+.landing-swiper .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  background-color: #ebeaea !important;
+}
+.landing-swiper .swiper-pagination-bullet-active {
+  opacity: 1 !important;
+  background-color: #3792e5 !important;
+}/*# sourceMappingURL=main.css.map */
