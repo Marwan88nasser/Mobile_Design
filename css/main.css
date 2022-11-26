@@ -24,6 +24,28 @@
   color: #61646B;
 }
 
+.search-box {
+  width: 100%;
+  background-color: #61646B;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 10px 15px;
+}
+.search-box input[type=search] {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  background-color: transparent;
+  border: none;
+}
+.search-box i, .search-box svg {
+  color: white;
+  font-size: 24px;
+}
+
 .box-icon-inp {
   position: relative;
 }
@@ -193,7 +215,7 @@ select:focus {
   color: #959597;
 }
 .top-nav .nav-content .icon-holder i.user-account, .top-nav .nav-content .icon-holder svg.user-account {
-  font-size: 40px;
+  font-size: 45px;
 }
 .top-nav .nav-content .icon-holder i.notification, .top-nav .nav-content .icon-holder svg.notification {
   font-size: 25px;
