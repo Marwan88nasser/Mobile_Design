@@ -28,9 +28,15 @@
   width: 100%;
   background-color: #61646B;
   border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 5px;
   padding: 10px 15px;
 }
@@ -73,7 +79,8 @@
 }
 
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0%;
   margin: 0%;
 }
@@ -140,7 +147,8 @@ select:focus {
 
 ::-webkit-scrollbar-track {
   background-color: rgba(246, 246, 246, 0.9647058824);
-  box-shadow: 0 0 2px #ddd inset;
+  -webkit-box-shadow: 0 0 2px #ddd inset;
+          box-shadow: 0 0 2px #ddd inset;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -206,10 +214,18 @@ select:focus {
 }
 
 .top-nav .nav-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .top-nav .nav-content .icon-holder i, .top-nav .nav-content .icon-holder svg {
   color: #959597;
@@ -227,6 +243,7 @@ select:focus {
   left: 0;
   width: 100%;
   z-index: 100;
+  -webkit-transition: 0.4s;
   transition: 0.4s;
   border-bottom: 1px solid #EFEFF0;
 }
@@ -238,28 +255,51 @@ select:focus {
     border-top: 1px solid #EFEFF0;
   }
   .header .main-nav .nav-menu {
-    justify-content: space-around !important;
+    -ms-flex-pack: distribute !important;
+        justify-content: space-around !important;
   }
   .header .main-nav .nav-menu .nav-item .nav-link {
     padding: 6px 20px !important;
   }
 }
 .header .main-nav .nav-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  align-items: flex-start;
-  flex-grow: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 .header .main-nav .nav-menu .nav-item .nav-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 3px;
   padding: 14px 16px;
   color: #AFB1B6;
+  -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 .header .main-nav .nav-menu .nav-item .nav-link .nav-icon {
@@ -285,10 +325,19 @@ select:focus {
 }
 .landing-swiper .swiper-wrapper .swiper-slide .box-text {
   height: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: center;
 }
 .landing-swiper .swiper-wrapper .swiper-slide .box-text h4 {
@@ -311,4 +360,4 @@ select:focus {
 .landing-swiper .swiper-pagination-bullet-active {
   opacity: 1 !important;
   background-color: #3792e5 !important;
-}/*# sourceMappingURL=main.css.map */
+}
