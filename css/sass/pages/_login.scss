@@ -1,0 +1,46 @@
+.login-page {
+ background-color: $main-color;
+ min-height: 100vh;
+ .logo {
+  width: 134px;
+  max-width: 100%;
+ }
+ .box-form {
+  margin-top: 156px;
+  .or {
+   font-size: 16px;
+   width: fit-content;
+   margin: 0 auto;
+   color: white;
+   position: relative;
+   &::before {
+    content: "";
+    height: 1px;
+    width: 128px;
+    background-color: white;
+    left: calc(100% + 8px);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+   &::after {
+    content: "";
+    height: 1px;
+    width: 128px;
+    background-color: white;
+    right: calc(100% + 8px);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+  }
+ }
+} 

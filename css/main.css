@@ -7,6 +7,49 @@
   margin: 20px 0 !important;
 }
 
+.row-gap-24 {
+  row-gap: 24px;
+}
+
+.main-btn {
+  background: #3792e5;
+  color: white;
+  border-radius: 8px;
+  padding: 1rem;
+  outline: none;
+  border: none;
+}
+.main-btn.bg-grey {
+  background: #AFB1B6;
+  color: #61646B;
+}
+
+.box-icon-inp {
+  position: relative;
+}
+.box-icon-inp .icon-inp {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+}
+.box-icon-inp .main-inp {
+  background: #AFB1B6;
+  border-radius: 8px;
+  padding: 1rem;
+  padding-right: calc(1rem + 25px);
+  width: 100%;
+  direction: rtl !important;
+  outline: none;
+  border: none;
+}
+
 * {
   box-sizing: border-box;
   padding: 0%;
@@ -21,6 +64,7 @@ body {
   min-height: 100vh;
   font-family: "Cairo", sans-serif;
   font-size: 14px;
+  color: #61646B;
 }
 
 ul {
@@ -88,6 +132,55 @@ select:focus {
 /* end scrollbar */
 .landing-page {
   height: 100vh;
+}
+
+.login-page {
+  background-color: #3792e5;
+  min-height: 100vh;
+}
+.login-page .logo {
+  width: 134px;
+  max-width: 100%;
+}
+.login-page .box-form {
+  margin-top: 156px;
+}
+.login-page .box-form .or {
+  font-size: 16px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  color: white;
+  position: relative;
+}
+.login-page .box-form .or::before {
+  content: "";
+  height: 1px;
+  width: 128px;
+  background-color: white;
+  left: calc(100% + 8px);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+.login-page .box-form .or::after {
+  content: "";
+  height: 1px;
+  width: 128px;
+  background-color: white;
+  right: calc(100% + 8px);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
 }
 
 .top-nav .nav-content {

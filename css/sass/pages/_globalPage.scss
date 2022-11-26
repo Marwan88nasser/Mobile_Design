@@ -8,6 +8,7 @@ body {
   min-height: 100vh;
   font-family: "Cairo", sans-serif;
   font-size: 14px;
+  color: $subtle-dark;
 }
 ul {
   @include reset-ul;
