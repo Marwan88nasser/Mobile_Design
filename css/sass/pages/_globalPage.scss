@@ -1,0 +1,72 @@
+* {
+  @include reset-all;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Cairo", sans-serif;
+  font-size: 14px;
+}
+ul {
+  @include reset-ul;
+}
+a {
+  @include a-reset;
+}
+// reset btn
+button {
+  border: none;
+  outline: none;
+}
+// Reset Bootstrap Btn
+.btn-warning,
+.btn-info {
+  color: $white-color;
+  &:hover {
+    color: $white-color;
+  }
+  &:focus {
+    color: $white-color;
+  }
+}
+// Reset Input
+input:focus,
+select:focus {
+  outline: none;
+}
+// heights-section
+.section-height {}
+
+// Reset Modal
+.modal-header {
+  .modal-title {
+    font-size: 15px !important;
+  }
+  .btn-close {
+    margin: unset !important;
+  }
+}
+/* start scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f6f6f6f6;
+  box-shadow: 0 0 2px #ddd inset;
+}
+
+::-webkit-scrollbar-thumb {
+  // background-color: #ed7e74c9;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  // background-color: $main-color;
+}
+/* end scrollbar */
