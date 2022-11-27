@@ -15,6 +15,12 @@ const swiper = new Swiper(swiperElement, {
     el: ".swiper-pagination",
   },
 });
+const swiper2 = new Swiper(".swiper-design", {
+  spaceBetween: 10,
+  slidesPerView: "auto",
+  centeredSlides: true,
+  slidesPerView: 1,
+});
 
 // Start set config of AOS Library
 AOS.init();

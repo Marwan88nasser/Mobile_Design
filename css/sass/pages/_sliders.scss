@@ -37,3 +37,19 @@
     background-color: $main-color !important;
   }
 }
+
+
+.swiper-design {
+  width: 100%;
+  min-height: 206px;
+  .swiper-wrapper {
+    .swiper-slide {
+      width: 100%;
+      height: 100%;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
