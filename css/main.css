@@ -1062,6 +1062,14 @@
   color: #61646b;
 }
 
+.box-content {
+  padding: 16px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+}
+
 .box-icon-inp {
   position: relative;
 }
@@ -1256,6 +1264,7 @@ body {
   min-height: 100vh;
   font-family: "Cairo", sans-serif;
   font-size: 14px;
+  background-color: #FBFBFB;
   color: #61646B;
 }
 
@@ -1577,6 +1586,10 @@ input:focus::placeholder {
   font-size: 12px;
 }
 
+.page-splashScreen {
+  background-color: white;
+  min-height: 100vh;
+}
 .page-splashScreen .logo-img {
   width: 134px;
   max-width: 100%;
