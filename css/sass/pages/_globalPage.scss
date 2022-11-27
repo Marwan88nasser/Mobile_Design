@@ -46,7 +46,8 @@ input {
 }
 
 // heights-section
-.section-height {}
+.section-height {
+}
 
 // Reset Modal
 .modal-header {
@@ -77,9 +78,45 @@ input {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  // background-color: $main-color;
+  background-color: $main-color;
 }
 /* end scrollbar */
 .landing-page {
   height: 100vh;
+}
+
+.rates {
+  .rate {
+    @include flex-center;
+    justify-content: space-between;
+    h2 {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 27px;
+      letter-spacing: 0.12px;
+      color: $subtle-dark;
+    }
+    .icon-holder {
+      i,
+      svg {
+        color: $light-gray;
+        font-size: 14.62px;
+      }
+    }
+    &.special {
+      h2 {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 34px;
+        letter-spacing: 0.004em;
+        color: $lg-dark;
+      }
+      .icon-holder {
+        i,
+        svg {
+          font-size: 17.87px;
+        }
+      }
+    }
+  }
 }
