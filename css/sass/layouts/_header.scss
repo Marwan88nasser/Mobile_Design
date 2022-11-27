@@ -55,7 +55,12 @@
           color: $light-gray;
           transition: $main-transition;
           .nav-icon {
-            font-size: 20px;
+            font-size: 23px;
+          }
+          &.active {
+            .nav-icon {
+              color: $alt-color;
+            }
           }
           .nav-name {
             font-weight: 500;

@@ -31,6 +31,10 @@
   </head>
   <body>
     <!-- start header -->
+    <div class="control-box justify-content-end">
+
+      <a href="account.html" class="back-btn"><img src="img/Arrow - Left.png" alt=""></a>
+    </div>
     <header class="header" id="header">
       <nav class="navbar main-nav py-1">
         <div class="container-md">
@@ -41,19 +45,18 @@
             <li class="nav-item">
               <a class="nav-link" href="index.html">
                 <i class="nav-icon bx bx-home"></i>
-                <span class="nav-name">الرئيسية</span>
+              </a>
+              <a class="nav-link" href="index.html">
+                <i class="nav-icon fa-solid fa-briefcase icon"></i>
+              </a>
+              <a class="nav-link active" href="search.html">
+                <i class="nav-icon bx bx-search "></i>
               </a>
               <a class="nav-link" href="messages.html">
                 <i class="nav-icon bx bx-envelope"></i>
-                <span class="nav-name">الرسائل</span>
-              </a>
-              <a class="nav-link" href="search.html">
-                <i class="nav-icon bx bx-search"></i>
-                <span class="nav-name">البحث</span>
               </a>
               <a class="nav-link" href="account.html">
                 <i class="nav-icon bx bx-user"></i>
-                <span class="nav-name">الحساب</span>
               </a>
             </li>
           </ul>
@@ -63,17 +66,20 @@
     <!-- end header -->
     <!-- start section -->
     <section class="py-3">
-      <div class="container-md">
-        <div class="search-box">
+      <div class="container-md d-flex align-items-center gap-3">
+        <div class="search-box flex-fill">
           <input type="text" name="" id="" placeholder="ادخل شيئا للبحث" />
           <i class="bx bx-search"></i>
         </div>
+        <a href="" class="btn-menu">
+          <img src="img/filter.png" alt="filter" />
+        </a>
       </div>
     </section>
     <!-- end section -->
     <!-- start section -->
     <section class="pb-3">
-      <div class="container-md px-0 px-md-2">
+      <div class="container-md">
         <ul
           class="nav nav-pills nav-fill main-tab"
           id="pills-tab"
@@ -108,63 +114,21 @@
             </button>
           </li>
         </ul>
-        <div class="tab-content" id="pills-tabContent">
+        <div class="tab-content py-4" id="pills-tabContent">
           <div
             class="tab-pane fade show active"
             id="pills-home"
             role="tabpanel"
             aria-labelledby="pills-home-tab"
           >
-            <ul class="sections-list">
-              <li class="section-item">
-                <a href="#" class="item">
-                  <img src="img/Work.png" alt="work" />
-                  <span>برمجة، تطوير المواقع والتطبيقات </span>
+            <div class="row row-gap-24">
+              <div class="col-6 col-sm-4 co-md-3 d-flex justify-content-center">
+                <a href="" class="box-section">
+                  <img src="./img/Rectangle 64.png" alt="" class="img-bg">
+                  برمجة
                 </a>
-              </li>
-              <li class="section-item">
-                <a href="#" class="item">
-                  <img src="img/Work.png" alt="work" />
-                  <span>أعمال وخدمات استشارية</span>
-                </a>
-              </li>
-              <li class="section-item">
-                <a href="#" class="item">
-                  <img src="img/Work.png" alt="work" />
-                  <span>هندسة، عمارة وتصميم داخلي</span>
-                </a>
-              </li>
-              <li class="section-item">
-                <a href="#" class="item">
-                  <img src="img/Work.png" alt="work" />
-                  <span>تصميم، فيديو وصوتيات</span>
-                </a>
-              </li>
-              <li class="section-item">
-                <a href="#" class="item">
-                  <img src="img/Work.png" alt="work" />
-                  <span>تسويق إلكتروني ومبيعات</span>
-                </a>
-              </li>
-              <li class="section-item">
-                <a href="#" class="item">
-                  <img src="img/Work.png" alt="work" />
-                  <span>كتابة، تحرير، ترجمة ولغات</span>
-                </a>
-              </li>
-              <li class="section-item">
-                <a href="#" class="item">
-                  <img src="img/Work.png" alt="work" />
-                  <span>دعم، مساعدة وإدخال بيانات</span>
-                </a>
-              </li>
-              <li class="section-item">
-                <a href="#" class="item">
-                  <img src="img/Work.png" alt="work" />
-                  <span>تدريب وتعليم عن بعد</span>
-                </a>
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
           <div
             class="tab-pane fade"
