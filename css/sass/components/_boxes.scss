@@ -224,6 +224,24 @@
     color: $subtle-dark;
   }
 }
+
+.box-work {
+  background-color: $white-color;
+  border-radius: 8px;
+  img {
+    width: 100%;
+    height: 85%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  .work-name {
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 23px;
+    color: $subtle-dark;
+  }
+}
+
 .name-and-img {
  display: flex;
  align-items: center;
