@@ -13,8 +13,7 @@
     height: 20px;
   }
   .main-inp {
-    background:#EFEFF0
-    ;
+    background: #efeff0;
     border-radius: 8px;
     padding: 1rem;
     padding-right: calc(1rem + 25px);
@@ -81,31 +80,30 @@
     letter-spacing: 0.12px;
     color: #d56363;
   }
- position: relative;
- .icon-inp {
-  position: absolute;
-  right: 1rem;
-  top: 50%;
-  transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  width: 20px;
-  height: 20px;
-}
- .main-inp {
-  background: #EFEFF0;
- border-radius: 8px;
- box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
- padding:1rem;
- padding-right: calc(1rem + 25px);
- width: 100%;
- direction: rtl !important;
- outline: none;
- border: none;
- 
- }
+  position: relative;
+  .icon-inp {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+  }
+  .main-inp {
+    background: #efeff0;
+    border-radius: 8px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    padding-right: calc(1rem + 25px);
+    width: 100%;
+    direction: rtl !important;
+    outline: none;
+    border: none;
+  }
 }
 
 // buttons
@@ -134,4 +132,37 @@
   line-height: 21px;
   letter-spacing: 0.12px;
   color: #fbfbfb;
+}
+
+.box-data-mony {
+  @include flex-center;
+  justify-content: space-around;
+  .word {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 27px;
+    letter-spacing: 0.12px;
+    color: #61646b;
+  }
+  .holder-value {
+    @include flex-center;
+    width: 171px;
+    height: 32px;
+    padding: 0 10px;
+    background: #fbfbfb;
+    border: 1px solid #d9d9d9;
+    border-radius: 8px;
+    span {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 23px;
+      letter-spacing: 0.12px;
+      color: #61646b;
+    }
+    .num {
+      display: inline-flex;
+      justify-content: center;
+      flex-grow: 1;
+    }
+  }
 }
