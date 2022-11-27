@@ -33,73 +33,185 @@
     <!-- start section -->
     <section class="page-profile py-4">
       <div class="container-md">
-       <a href="" class="btn-back mb-2">
-         <i class="fas fa-arrow-left"></i>
-       </a>
-       <div class="info-user text-center">
-        <img src="./img/Avatar.png" alt="" class="img-user">
-        <div class="name">
-         ثابت زين الدين
+        <a href="account.html" class="btn-back mb-2">
+          <i class="fas fa-arrow-left"></i>
+        </a>
+        <div class="info-user text-center">
+          <img src="./img/Avatar.png" alt="" class="img-user" />
+          <div class="name">ثابت زين الدين</div>
+          <div class="info">مصمم تجربة المستخدم</div>
         </div>
-        <div class="info">
-         مصمم تجربة المستخدم
+        <ul
+          class="nav nav-pills nav-fill main-tab mb-3"
+          id="pills-tab"
+          role="tablist"
+        >
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="pills-home-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-home"
+              type="button"
+              role="tab"
+              aria-controls="pills-home"
+              aria-selected="true"
+            >
+              الملف الشخصي
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-profile-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-profile"
+              type="button"
+              role="tab"
+              aria-controls="pills-profile"
+              aria-selected="false"
+            >
+              التقيمات
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-contact-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-contact"
+              type="button"
+              role="tab"
+              aria-controls="pills-contact"
+              aria-selected="false"
+            >
+              معرض الأعمال
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <div
+            class="tab-pane fade show active"
+            id="pills-home"
+            role="tabpanel"
+            aria-labelledby="pills-home-tab"
+          >
+            <div class="text-dark mb-2 fs-6 fw-bold">نبذة عني</div>
+            <div class="main-text" id="text-more">
+              <div id="text">
+                السلام عليكم و رحمة الله تعالى و بركاته ، أنا زين الدين ، مصمم
+                واجهة و تجربة المستخدم UI/UX ل (iOS & Android) ، المواقع
+                الالكترونية و صفحات الهبوط . اخترت مجال تجربة المستخدم لكوني
+                مهتما بشدة لتحويل الأفكار الى تصاميم فعلية جاهزة للتطبيق و
+                البرمجة ، خلفيتي البرمجية ممتازة حيث درست بقسم علوم الحاسوب و
+                تكونت كمطور ويب و عملت على مواقع العمل الحر كخمسات و فايفر ،
+                حاليا أطور مهاراتي في الجانب التسويقي و التجاري قصد الوصول
+                للمنتوج الأمثل و تحقيق أكبر عائد منه . هدفي الوصول للعمل على
+                مشاريع كبيرة و تحقيق النجاح فيها ، فنجاح منتجات زبائني يعد نجاحا
+                لي . أصمم بشغف ، أقدس العمل و أتفرغ له كليا و اعطيه كل جهدي ،
+                كما اتابعه بعد التسليم و أكون جاهزا لأي مساعدة أو تعديل . طريقة
+                عملي : - مرحلة تحليل الفكرة و الموازنة بين احتياجات المستخدم و
+                اهداف العمل. - تحديد المميزات الاساسية و المحتوى للتطبيق المراد
+                بناؤه. - تصميم رحلة المستخدم على برنامج Miro أو FigJam. - تصميم
+                هيكلية المعلومات . - تصميم مسار المستخدم . - رسم اسكتش ورقي
+                لجميع الشاشات. - تصميم النماذج الأولية حيث يتم تحويل الاسكتش
+                الورقي الى تصميم رقمي على برنامج Figma. - تصميم واجهات المستخدم
+                . - تنفيذ التفاعل بين الشاشات و معاينة التطبيق. تواصلكم معي
+                يسعدني ، و يشرفني أن أكون جزءا في تحقيقكم للنجاح .
+              </div>
+              <!-- <a href="" id="btn-more"> المزيد </a> -->
+            </div>
+            <br>
+            <div class="text-dark mb-3 fs-6 fw-bold">المهارات </div>
+            <div class="skills-box">
+              <div class="skill">تصميم تجربة المستخدم</div>
+              <div class="skill">UI&UX</div>
+              <div class="skill">Figma</div>
+              <div class="skill">تصميم صفحات الهبوط</div>
+              <div class="skill">تصميم واجهة المستخدم</div>
+              <div class="skill">تصميم المواقع</div>
+              <div class="skill">CSS3</div>
+              <div class="skill">HTML5</div>
+            </div>
+            <div class="row g-3 mt-2">
+              <div class="col-6 col-md-6">
+                <div class="box-info">
+                  <div class="info">
+                    <div class="image-holder">
+                      <img src="img/Location.png" alt="Location">
+                    </div>
+                    <span class="text">البلد</span>
+                  </div>
+                  <div class="ans">
+                    الجزائر
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-6">
+                <div class="box-info">
+                  <div class="info">
+                    <div class="image-holder">
+                      <img src="img/Message.png" alt="Message">
+                    </div>
+                    <span class="text">م . سرعة الرد</span>
+                  </div>
+                  <div class="ans">
+                    15 دقيقة
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-6">
+                <div class="box-info">
+                  <div class="info">
+                    <div class="image-holder">
+                      <img src="img/xt-work.png" alt="work">
+                    </div>
+                    <span class="text">المشاريع المكتملة</span>
+                  </div>
+                  <div class="ans">
+                    02
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-6">
+                <div class="box-info">
+                  <div class="info">
+                    <div class="image-holder">
+                      <img src="img/Calendar.png" alt="Calendar">
+                    </div>
+                    <span class="text">ت . التسجيل</span>
+                  </div>
+                  <div class="ans">
+                    2021/06/11
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pills-profile"
+            role="tabpanel"
+            aria-labelledby="pills-profile-tab"
+          >
+            <div class="box-rate">
+              <div class="rate">
+                <h1></h1>
+                <div class="icon-holder">
+                  <i class='bx bx-star' ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pills-contact"
+            role="tabpanel"
+            aria-labelledby="pills-contact-tab"
+          >
+            ...
+          </div>
         </div>
-       </div>
-       <ul class="nav nav-pills nav-fill main-tab mb-3" id="pills-tab" role="tablist">
-        <li class="nav-item" role="presentation">
-          <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">الملف الشخصي</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">التقيمات</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">معرض الأعمال</button>
-        </li>
-      </ul>
-      <div class="tab-content" id="pills-tabContent">
-        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-         <div class="text-dark mb-2 fs-6 fw-bold">
-          نبذة عني
-         </div>
-         <div class="main-text" id="text-more">
-         <div id="text">
-          السلام عليكم و رحمة الله تعالى و بركاته ،
-          أنا زين الدين ، مصمم واجهة و تجربة المستخدم UI/UX ل (iOS & Android) ، المواقع الالكترونية و صفحات الهبوط .
-          اخترت مجال تجربة المستخدم لكوني مهتما بشدة لتحويل الأفكار الى تصاميم فعلية جاهزة للتطبيق و البرمجة ، خلفيتي البرمجية ممتازة حيث درست بقسم علوم الحاسوب و تكونت كمطور ويب و عملت على مواقع العمل الحر كخمسات و فايفر ، حاليا أطور مهاراتي في الجانب التسويقي و التجاري قصد الوصول للمنتوج الأمثل و تحقيق أكبر عائد منه .
-          
-          هدفي الوصول للعمل على مشاريع كبيرة و تحقيق النجاح فيها ، فنجاح منتجات زبائني يعد نجاحا لي .
-          
-          أصمم بشغف ، أقدس العمل و أتفرغ له كليا و اعطيه كل جهدي ، كما اتابعه بعد التسليم و أكون جاهزا لأي مساعدة أو تعديل .
-          
-          طريقة عملي :
-          
-          - مرحلة تحليل الفكرة و الموازنة بين احتياجات المستخدم و اهداف العمل.
-          
-          - تحديد المميزات الاساسية و المحتوى للتطبيق المراد بناؤه.
-          
-          - تصميم رحلة المستخدم على برنامج Miro أو FigJam.
-          
-          - تصميم هيكلية المعلومات .
-          
-          - تصميم مسار المستخدم .
-          
-          - رسم اسكتش ورقي لجميع الشاشات.
-          
-          - تصميم النماذج الأولية حيث يتم تحويل الاسكتش الورقي الى تصميم رقمي على برنامج Figma.
-          
-          - تصميم واجهات المستخدم .
-          
-          - تنفيذ التفاعل بين الشاشات و معاينة التطبيق.
-          تواصلكم معي يسعدني ، و يشرفني أن أكون جزءا في تحقيقكم للنجاح .
-         </div>
-         <!-- <a href="" id="btn-more">
-          المزيد
-         </a> -->
-         </div>
-        </div>
-        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
-        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
-      </div>
       </div>
     </section>
     <!-- end section -->

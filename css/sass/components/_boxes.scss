@@ -1,19 +1,182 @@
 .search-box {
   width: 100%;
-  background-color: $subtle-dark;
+  background-color: #afb1b6;
   border-radius: 8px;
   @include flex-center;
   gap: 5px;
-  padding: 10px 15px;
-  input[type="search"] {
+  padding: 7px 15px;
+  color: $white-color;
+  input[type="text"] {
     width: 100%;
     height: 100%;
     border-radius: 8px;
     background-color: transparent;
     border: none;
+    color: #efeff0;
+    font-size: 14px;
+    &::placeholder {
+      color: #efeff0;
+    }
   }
-  i, svg {
-    color: white;
+  i,
+  svg {
+    color: #efeff0;
     font-size: 24px;
   }
+}
+
+.panner-box {
+  background: #afb1b6;
+  border-radius: 8px;
+  min-height: 88px;
+}
+
+.box-offer {
+  padding: 10px;
+  background: #f7f7f7;
+  border: 1px solid #f2f2f2;
+  border-radius: 8px;
+  .offer-info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    .offer-name {
+      font-weight: 500;
+      font-size: 19px;
+      line-height: 30px;
+      letter-spacing: 2.1px;
+      color: $lg-dark;
+    }
+    .heart-icon {
+      color: #959597;
+      line-height: 40px;
+      font-size: 21px;
+    }
+  }
+  .offer-price {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.12px;
+    color: $subtle-dark;
+    margin-bottom: 10px;
+  }
+  .offer-des {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: 0.08px;
+    color: $lg-dark;
+  }
+  &.box-messages {
+    @include flex-center;
+    gap: 7px;
+    .img-holder {
+      .user-photo {
+        width: 74px;
+        height: 74px;
+      }
+    }
+    .messages-body {
+      .messages-info {
+        @include flex-center;
+        justify-content: space-between;
+        margin-bottom: 4px;
+        .name {
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 27px;
+          letter-spacing: 0.12px;
+          color: $lg-dark;
+        }
+        .date {
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 21px;
+          letter-spacing: 0.12px;
+          color: $light-gray;
+        }
+      }
+      .messages-des {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 23px;
+        letter-spacing: 0.2px;
+        color: $subtle-dark;
+      }
+    }
+  }
+}
+
+.profile-banner-box {
+  @include flex-center;
+  justify-content: space-between;
+  background-color: #f4f4f4;
+  padding: 15px;
+  .user-info {
+    @include flex-center;
+    gap: 7px;
+    .text-holder {
+      .name {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 30px;
+        letter-spacing: 0.16px;
+        color: $lg-dark;
+      }
+      p {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 27px;
+        letter-spacing: 0.08px;
+        color: $light-gray;
+      }
+    }
+  }
+}
+
+.skills-box {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  flex-wrap: wrap;
+  .skill {
+    @include flex-center;
+    padding: 4px 20px;
+    gap: 10px;
+    background: #61646b;
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 21px;
+    letter-spacing: 0.3px;
+    color: #efeff0;
+  }
+}
+
+.box-info {
+  .info {
+    @include flex-center;
+    justify-content: flex-start;
+    gap: 7px;
+    .text {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 23px;
+      letter-spacing: 0.2px;
+      color: $subtle-dark;
+    }
+  }
+  .ans {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 27px;
+    letter-spacing: 0.12px;
+    color: $lg-dark;
+  }
+}
+
+.box-rate {
+  
 }

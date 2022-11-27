@@ -21,6 +21,7 @@
   left: 0;
   width: 100%;
   z-index: 100;
+    background-color: $white-color;
   transition: $main-transition;
   border-bottom: 1px solid #EFEFF0;
   @include maxWidth(sm) {

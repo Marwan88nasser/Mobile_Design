@@ -37,6 +37,14 @@ input:focus,
 select:focus {
   outline: none;
 }
+
+input {
+  &:focus::placeholder {
+    opacity: 0;
+    transition: $sm-transition;
+  }
+}
+
 // heights-section
 .section-height {}
 
