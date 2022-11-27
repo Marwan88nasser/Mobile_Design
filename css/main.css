@@ -344,14 +344,14 @@
   color: #efeff0;
 }
 
-.box-info .info {
+.box-info .info-1 {
   display: flex;
   align-items: center;
   justify-content: center;
   justify-content: flex-start;
   gap: 7px;
 }
-.box-info .info .text {
+.box-info .info-1 .text {
   font-weight: 400;
   font-size: 14px;
   line-height: 23px;
@@ -813,7 +813,7 @@ input:focus::placeholder {
   color: black;
   font-size: 16px;
 }
-.page-profile .info-user .info {
+.page-profile .info-user .info-data {
   font-size: 12px;
 }
 
