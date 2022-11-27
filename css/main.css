@@ -19,17 +19,56 @@
   background-color: #FBFBFB;
 }
 
+.text-subtle-dark {
+  color: #61646B;
+}
+
+.text-light-gray {
+  color: #AFB1B6;
+}
+
+.text-dark-color {
+  color: #4F4F50;
+}
+
+.text-alt-color {
+  color: #87BEEF;
+}
+
+.fs-12 {
+  font-size: 12px;
+}
+
 .main-btn {
-  background: #3792e5;
+  background: #87BEEF;
+  -webkit-box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.14);
+          box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.14);
   color: white;
   border-radius: 8px;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   outline: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 24px;
   border: none;
 }
-.main-btn.bg-grey {
-  background: #AFB1B6;
-  color: #61646B;
+.main-btn.btn-grey {
+  background-color: #EFEFF0;
+  color: #AFB1B6;
+  background: #EFEFF0;
+  -webkit-box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+}
+.main-btn .icon {
+  width: 24px;
+  height: auto;
 }
 
 .btn-back {
@@ -246,6 +285,12 @@
   letter-spacing: 0.16px;
   color: #19191B;
   margin-bottom: 0;
+}
+
+.welcome {
+  color: #4F4F50;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .search-box {
@@ -986,8 +1031,10 @@
   height: 20px;
 }
 .box-icon-inp .main-inp {
-  background: #AFB1B6;
+  background: #EFEFF0;
   border-radius: 8px;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
   padding: 1rem;
   padding-right: calc(1rem + 25px);
   width: 100%;
@@ -1155,7 +1202,7 @@ input:focus::placeholder {
 }
 
 .login-page {
-  background-color: #3792e5;
+  background-color: white;
   min-height: 100vh;
 }
 .login-page .logo {
@@ -1163,7 +1210,7 @@ input:focus::placeholder {
   max-width: 100%;
 }
 .login-page .box-form {
-  margin-top: 156px;
+  margin-top: 74px;
 }
 .login-page .box-form .or {
   font-size: 16px;
@@ -1171,14 +1218,15 @@ input:focus::placeholder {
   width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
-  color: white;
+  color: #AFB1B6;
   position: relative;
 }
 .login-page .box-form .or::before {
   content: "";
   height: 1px;
   width: 128px;
-  background-color: white;
+  background: -webkit-gradient(linear, left top, right top, from(#AFB1B6), to(rgba(175, 177, 182, 0)));
+  background: linear-gradient(90deg, #AFB1B6 0%, rgba(175, 177, 182, 0) 100%);
   left: calc(100% + 8px);
   position: absolute;
   top: 50%;
@@ -1192,7 +1240,8 @@ input:focus::placeholder {
   content: "";
   height: 1px;
   width: 128px;
-  background-color: white;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(175, 177, 182, 0)), to(#AFB1B6));
+  background: linear-gradient(90deg, rgba(175, 177, 182, 0) 0%, #AFB1B6 100%);
   right: calc(100% + 8px);
   position: absolute;
   top: 50%;
@@ -1201,6 +1250,9 @@ input:focus::placeholder {
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
+}
+.login-page .main-btn {
+  padding: 1rem !important;
 }
 
 .top-nav .nav-content {

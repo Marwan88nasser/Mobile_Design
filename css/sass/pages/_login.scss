@@ -1,23 +1,23 @@
 .login-page {
- background-color: $main-color;
+ background-color: white;
  min-height: 100vh;
  .logo {
   width: 134px;
   max-width: 100%;
  }
  .box-form {
-  margin-top: 156px;
+  margin-top: 74px;
   .or {
    font-size: 16px;
    width: fit-content;
    margin: 0 auto;
-   color: white;
+   color: $light-gray;
    position: relative;
    &::before {
     content: "";
     height: 1px;
     width: 128px;
-    background-color: white;
+    background: $linear-line1;
     left: calc(100% + 8px);
     position: absolute;
     top: 50%;
@@ -31,7 +31,7 @@
     content: "";
     height: 1px;
     width: 128px;
-    background-color: white;
+    background: $linear-line1-rtl;
     right: calc(100% + 8px);
     position: absolute;
     top: 50%;
@@ -42,5 +42,8 @@
     -o-transform: translateY(-50%);
 }
   }
+ }
+ .main-btn {
+  padding: 1rem !important;
  }
 } 
