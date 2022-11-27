@@ -23,12 +23,7 @@ AOS.init();
 if (document.querySelectorAll('#text-more #text')) {
   let oldContent='';
   document.querySelectorAll('#text-more #text').forEach(text=>{
-    let btnMore = document.createElement("a");
-    btnMore.setAttribute("id","btn-more");
-    btnMore.textContent = "المزيد";
     oldContent = text.textContent;
     text.innerHTML = text.textContent.substr(0,160) + '...';
-    text.appendChild(btnMore);
   })
-  // let btnsMore = document.querySelectorAll('#text-more #text ')
 }

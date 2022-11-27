@@ -95,3 +95,17 @@
     }
   }
 }
+
+.btn-icon {
+ display: flex;
+justify-content: center;
+align-items: center;
+padding: 8px 16px;
+gap: 5.6px;
+font-size: 12px;
+color: white;
+background-color: $light-gray;
+border: 0;
+outline: 0;
+border-radius: 8px;
+}
