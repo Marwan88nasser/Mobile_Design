@@ -1367,6 +1367,7 @@ input:focus::placeholder {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1376,15 +1377,29 @@ input:focus::placeholder {
 .page-splashScreen .btn-arr.lvl-1 {
   background: conic-gradient(#afd3f5 33.3333333333%, transparent 0);
 }
+.page-splashScreen .btn-arr.lvl-2 {
+  background: conic-gradient(#afd3f5 66.6666666667%, transparent 0);
+}
+.page-splashScreen .btn-arr.lvl-3 {
+  background: conic-gradient(#afd3f5 100%, transparent 0);
+}
 .page-splashScreen .btn-arr img {
   border: 10px white solid;
   width: 75px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   height: 75px;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
 }
 
 .landing-swiper {

@@ -61,21 +61,36 @@ line-height: 27px;
   -ms-border-radius: 50%;
   display: flex;
   align-items: center;
+  position: relative;
   justify-content: center;
   margin: 0 auto;
   -o-border-radius: 50%;
   &.lvl-1 {
    background:conic-gradient($mainShadow-color calc(100% / 3), transparent 0) ;
   }
+  &.lvl-2 {
+   background:conic-gradient($mainShadow-color calc(100% / 3 * 2), transparent 0) ;
+  }
+  &.lvl-3 {
+   background:conic-gradient($mainShadow-color calc(100% / 3 * 3), transparent 0) ;
+  }
   img {
    border: 10px white solid;
    width: 75px;
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%,-50%);
    height: 75px;
    border-radius: 50%;
    -webkit-border-radius: 50%;
    -moz-border-radius: 50%;
    -ms-border-radius: 50%;
    -o-border-radius: 50%;
+   -webkit-transform: translate(-50%,-50%);
+   -moz-transform: translate(-50%,-50%);
+   -ms-transform: translate(-50%,-50%);
+   -o-transform: translate(-50%,-50%);
 }
 }
 }
