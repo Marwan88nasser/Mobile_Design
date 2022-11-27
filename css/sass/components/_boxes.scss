@@ -152,6 +152,9 @@
     line-height: 21px;
     letter-spacing: 0.3px;
     color: #efeff0;
+    &.skill-dark {
+      background-color: #5875A0
+    }
   }
 }
 
@@ -179,22 +182,48 @@
 
 .box-rate {
   .project-name {
-    font-weight: 500;
-    font-size: 16px;
+    font-weight: bold;
+    font-size: 12px;
     line-height: 30px;
     letter-spacing: 0.16px;
-    color: $lg-dark;
+    margin-bottom: 8px;
+    color: $subtle-dark;
+    img {
+      width: 16px;
+      height: auto;
+    }
   }
   .main-info {
     @include flex-center;
-    justify-content: flex-start;
-    margin-bottom: 10px;
-    span {
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 27px;
-      letter-spacing: 0.12px;
-      color: $subtle-dark;
+    justify-content: space-between;
+    margin-bottom: 8px;
+
+    .image-holder {
+      display: flex;
+      gap: 12px;
+      .info-text {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        .name {
+          font-size: 14px;
+          color: $dark-color;
+        }
+        span {
+          color: $light-gray;
+          font-size: 12px;
+        }
+      }
+      img {
+        width: 54px;
+        height: 54px;
+        border-radius: 50%      ;
+        -webkit-border-radius: 50%      ;
+        -moz-border-radius: 50%      ;
+        -ms-border-radius: 50%      ;
+        -o-border-radius: 50%      ;
+        object-fit: cover
+}
     }
   }
   .date-rate {

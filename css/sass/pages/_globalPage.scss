@@ -94,6 +94,7 @@ input {
       font-weight: 500;
       font-size: 14px;
       line-height: 27px;
+      margin-bottom: 6px;
       letter-spacing: 0.12px;
       color: $subtle-dark;
     }
@@ -102,6 +103,9 @@ input {
       svg {
         color: $light-gray;
         font-size: 14.62px;
+        &.active {
+          color: $gold-color;
+        }
       }
     }
     &.special {
@@ -110,6 +114,7 @@ input {
         font-size: 18px;
         line-height: 34px;
         letter-spacing: 0.004em;
+        margin-bottom: 16px;
         color: $lg-dark;
       }
       .icon-holder {

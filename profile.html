@@ -31,66 +31,86 @@
   </head>
   <body>
     <!-- start section -->
+    <div class="control-box">
+      <button class="btn-menu">
+        <img src="img/More Square.png" alt="">
+      </button>
+      <a href="account.html" class="back-btn"><img src="img/Arrow - Left.png" alt=""></a>
+    </div>
     <section class="page-profile py-4">
       <div class="container-md">
-        <a href="account.html" class="btn-back mb-2">
-          <i class="fas fa-arrow-left"></i>
-        </a>
+
         <div class="info-user text-center">
-          <img src="./img/Avatar.png" alt="" class="img-user" />
+          <div class="img">
+            <img src="./img/Avatar.png" alt="" class="img-user" />
+            <div class="cr-active"></div>
+          </div>
           <div class="name">ثابت زين الدين</div>
-          <div class="info-data">مصمم تجربة المستخدم</div>
+          <div class="d-flex align-items-center justify-content-center gap-2">
+            <div class="info-data">مصمم تجربة المستخدم</div>
+          <div class="rates">
+            <div class="rate">
+              <div class="d-flex align-items-center gap-1">
+                <div class="icon-holder ">
+                  <i class="fas fa-star active"></i>
+                </div>
+                <span class="text-gold-color fw-bold">5.0</span>
+              </div>
+            </div>
+
+          </div>
+          </div>
         </div>
       </div>
-      <div class="container-md px-0 px-md-3">
-        <ul
-          class="nav nav-pills nav-fill main-tab mb-3"
-          id="pills-tab"
-          role="tablist"
-        >
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link active"
-              id="pills-home-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-home"
-              type="button"
-              role="tab"
-              aria-controls="pills-home"
-              aria-selected="true"
-            >
-              الملف الشخصي
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link"
-              id="pills-profile-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-profile"
-              type="button"
-              role="tab"
-              aria-controls="pills-profile"
-              aria-selected="false"
-            >
-              التقيمات
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link"
-              id="pills-contact-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-contact"
-              type="button"
-              role="tab"
-              aria-controls="pills-contact"
-              aria-selected="false"
-            >
-              معرض الأعمال
-            </button>
-          </li>
-        </ul>
+      <ul
+        class="nav nav-pills nav-fill main-tab mb-3"
+        id="pills-tab"
+        role="tablist"
+      >
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active"
+            id="pills-home-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-home"
+            type="button"
+            role="tab"
+            aria-controls="pills-home"
+            aria-selected="true"
+          >
+            الملف الشخصي
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="pills-profile-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-profile"
+            type="button"
+            role="tab"
+            aria-controls="pills-profile"
+            aria-selected="false"
+          >
+            التقيمات
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="pills-contact-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-contact"
+            type="button"
+            role="tab"
+            aria-controls="pills-contact"
+            aria-selected="false"
+          >
+            معرض الأعمال
+          </button>
+        </li>
+      </ul>
+      <div class="container-md ">
         <div class="tab-content" id="pills-tabContent">
           <div
             class="tab-pane fade show active px-2"
@@ -135,49 +155,51 @@
               <div class="skill">CSS3</div>
               <div class="skill">HTML5</div>
             </div>
+            <div class=" box-content">
             <div class="row g-3 mt-2">
-              <div class="col-6 col-md-6">
-                <div class="box-info">
-                  <div class="info-1">
-                    <div class="image-holder">
-                      <img src="img/Location.png" alt="Location" />
+                <div class="col-6 col-md-6">
+                  <div class="box-info">
+                    <div class="info-1">
+                      <div class="image-holder">
+                        <img src="img/Location.png" alt="Location" />
+                      </div>
+                      <span class="text">البلد</span>
                     </div>
-                    <span class="text">البلد</span>
+                    <div class="ans">الجزائر</div>
                   </div>
-                  <div class="ans">الجزائر</div>
                 </div>
-              </div>
-              <div class="col-6 col-md-6">
-                <div class="box-info">
-                  <div class="info-1">
-                    <div class="image-holder">
-                      <img src="img/Message.png" alt="Message" />
+                <div class="col-6 col-md-6">
+                  <div class="box-info">
+                    <div class="info-1">
+                      <div class="image-holder">
+                        <img src="img/Message.png" alt="Message" />
+                      </div>
+                      <span class="text">م . سرعة الرد</span>
                     </div>
-                    <span class="text">م . سرعة الرد</span>
+                    <div class="ans">15 دقيقة</div>
                   </div>
-                  <div class="ans">15 دقيقة</div>
                 </div>
-              </div>
-              <div class="col-6 col-md-6">
-                <div class="box-info">
-                  <div class="info-1">
-                    <div class="image-holder">
-                      <img src="img/xt-work.png" alt="work" />
+                <div class="col-6 col-md-6">
+                  <div class="box-info">
+                    <div class="info-1">
+                      <div class="image-holder">
+                        <img src="img/xt-work.png" alt="work" />
+                      </div>
+                      <span class="text">المشاريع المكتملة</span>
                     </div>
-                    <span class="text">المشاريع المكتملة</span>
+                    <div class="ans">02</div>
                   </div>
-                  <div class="ans">02</div>
                 </div>
-              </div>
-              <div class="col-6 col-md-6">
-                <div class="box-info">
-                  <div class="info-1">
-                    <div class="image-holder">
-                      <img src="img/Calendar.png" alt="Calendar" />
+                <div class="col-6 col-md-6">
+                  <div class="box-info">
+                    <div class="info-1">
+                      <div class="image-holder">
+                        <img src="img/Calendar.png" alt="Calendar" />
+                      </div>
+                      <span class="text">ت . التسجيل</span>
                     </div>
-                    <span class="text">ت . التسجيل</span>
+                    <div class="ans">2021/06/11</div>
                   </div>
-                  <div class="ans">2021/06/11</div>
                 </div>
               </div>
             </div>
@@ -192,100 +214,126 @@
               <div class="rates px-2">
                 <div class="rate special">
                   <h2>التقييم الإجمالي</h2>
-                  <div class="icon-holder">
-                    <i class="bx bx-star"></i>
-                    <i class="bx bx-star"></i>
-                    <i class="bx bx-star"></i>
-                    <i class="bx bx-star"></i>
-                    <i class="bx bx-star"></i>
+                  <div class="d-flex align-items-center gap-1">
+                    <div class="icon-holder ">
+                      <i class="fas fa-star active"></i>
+                    </div>
+                    <span class="text-gold-color fw-bold">5.0</span>
                   </div>
                 </div>
                 <div class="rate">
                   <h2>التواصل و المتابعة</h2>
-                  <div class="icon-holder">
-                    <i class="bx bx-star"></i>
-                    <i class="bx bx-star"></i>
-                    <i class="bx bx-star"></i>
-                    <i class="bx bx-star"></i>
-                    <i class="bx bx-star"></i>
+                  <div class="d-flex align-items-center gap-1">
+                    <div class="icon-holder ">
+                      <i class="fas fa-star active"></i>
+                    </div>
+                    <span class="text-gold-color fw-bold">5.0</span>
                   </div>
                 </div>
                 <div class="rate">
                   <h2>جودة العمل المسلم</h2>
-                  <div class="icon-holder">
-                    <i class="bx bx-star"></i>
-                    <i class="bx bx-star"></i>
-                    <i class="bx bx-star"></i>
-                    <i class="bx bx-star"></i>
-                    <i class="bx bx-star"></i>
+                  <div class="d-flex align-items-center gap-1">
+                    <div class="icon-holder ">
+                      <i class="fas fa-star active"></i>
+                    </div>
+                    <span class="text-gold-color fw-bold">5.0</span>
                   </div>
                 </div>
                 <div class="rate">
                   <h2>التسليم بالموعد</h2>
-                  <div class="icon-holder">
-                    <i class="bx bx-star"></i>
-                    <i class="bx bx-star"></i>
-                    <i class="bx bx-star"></i>
-                    <i class="bx bx-star"></i>
-                    <i class="bx bx-star"></i>
+                  <div class="d-flex align-items-center gap-1">
+                    <div class="icon-holder ">
+                      <i class="fas fa-star active"></i>
+                    </div>
+                    <span class="text-gold-color fw-bold">5.0</span>
                   </div>
                 </div>
               </div>
               <hr />
             </div>
-            <div class="box-holder">
-              <div class="box-rate px-2">
-                <h2 class="m-0 project-name">
-                  تصميم واجهة المستخدم لتطبييق توصيلات
-                </h2>
-                <div class="main-info">
-                  <div class="image-holder">
-                    <img src="img/Avatar.png" alt="Avatar" width="35"/>
-                    <span>محمد عبد العزيز</span>
+            <div class="d-flex flex-column gap-3">
+              <div class="box-holder box-content">
+                <div class="box-rate px-2">
+                  
+                  <div class="main-info">
+                    <div class="image-holder">
+                      <img src="img/Avatar.png" alt="Avatar" width="35"/>
+                      <div class="info-text">
+                        <div class="name">محمد عبد العزيز</div>
+                        <span>صاحب المشروع</span>
+                      </div>
+                    </div>
+                    <div class="rates">
+                      <div class="rate">
+                        <div class="d-flex align-items-center gap-1">
+                          <div class="icon-holder ">
+                            <i class="fas fa-star active"></i>
+                          </div>
+                          <span class="text-gold-color fw-bold">5.0</span>
+                      </div>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div class="date-rate">
-                  <p class="date">2022/07/18</p>
-                  <div class="icon-holder">
-                    <i class="bx bx-star"></i>
-                    <i class="bx bx-star"></i>
-                    <i class="bx bx-star"></i>
-                    <i class="bx bx-star"></i>
-                    <i class="bx bx-star"></i>
+                  <h2 class="m-0 project-name d-flex align-items-center gap-2">
+                    <img src="img/Work.png" alt="work" />
+                    تصميم واجهة المستخدم لتطبييق توصيلات
+                  </h2>
+                  <div class="d-flex align-items-center mb-3 gap-2">
+                    <div class="skills-box">
+                      <div class="skill skill-dark">
+                        مكتمل
+                      </div>
+                    </div>
+                    <div class="date-rate">
+                      <p class="date">2022/07/18</p>
+                    </div>
                   </div>
+                  <p class="mb-0 rate-text">
+                    “شخص خلوق وعمله مميز ويقبل التعديلات المطلوبة منه انصح بالتعامل معه ولن يكون اخر تعامل لي معه .
+                  </p>
                 </div>
-                <p class="mb-0 rate-text">
-                  “شخص خلوق وعمله مميز ويقبل التعديلات المطلوبة منه انصح بالتعامل معه ولن يكون اخر تعامل لي معه .
-                </p>
               </div>
-              <hr>
-            </div>
-            <div class="box-holder">
-              <div class="box-rate px-2">
-                <h2 class="m-0 project-name">
-                  تصميم واجهة المستخدم لتطبييق توصيلات
-                </h2>
-                <div class="main-info">
-                  <div class="image-holder">
-                    <img src="img/Avatar.png" alt="Avatar" width="35"/>
-                    <span>محمد عبد العزيز</span>
+              <div class="box-holder box-content">
+                <div class="box-rate px-2">
+                  
+                  <div class="main-info">
+                    <div class="image-holder">
+                      <img src="img/Avatar.png" alt="Avatar" width="35"/>
+                      <div class="info-text">
+                        <div class="name">محمد عبد العزيز</div>
+                        <span>صاحب المشروع</span>
+                      </div>
+                    </div>
+                    <div class="rates">
+                      <div class="rate">
+                        <div class="d-flex align-items-center gap-1">
+                          <div class="icon-holder ">
+                            <i class="fas fa-star active"></i>
+                          </div>
+                          <span class="text-gold-color fw-bold">5.0</span>
+                      </div>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div class="date-rate">
-                  <p class="date">2022/07/18</p>
-                  <div class="icon-holder">
-                    <i class="bx bx-star"></i>
-                    <i class="bx bx-star"></i>
-                    <i class="bx bx-star"></i>
-                    <i class="bx bx-star"></i>
-                    <i class="bx bx-star"></i>
+                  <h2 class="m-0 project-name d-flex align-items-center gap-2">
+                    <img src="img/Work.png" alt="work" />
+                    تصميم واجهة المستخدم لتطبييق توصيلات
+                  </h2>
+                  <div class="d-flex align-items-center mb-3 gap-2">
+                    <div class="skills-box">
+                      <div class="skill skill-dark">
+                        مكتمل
+                      </div>
+                    </div>
+                    <div class="date-rate">
+                      <p class="date">2022/07/18</p>
+                    </div>
                   </div>
+                  <p class="mb-0 rate-text">
+                    “شخص خلوق وعمله مميز ويقبل التعديلات المطلوبة منه انصح بالتعامل معه ولن يكون اخر تعامل لي معه .
+                  </p>
                 </div>
-                <p class="mb-0 rate-text">
-                  “شخص خلوق وعمله مميز ويقبل التعديلات المطلوبة منه انصح بالتعامل معه ولن يكون اخر تعامل لي معه .
-                </p>
               </div>
-              <hr>
             </div>
           </div>
           <div
@@ -293,33 +341,33 @@
             id="pills-contact"
             role="tabpanel"
             aria-labelledby="pills-contact-tab">
-            <div class="row g-2">
+            <div class="row row-gap-24">
               <div class="col-6 col-6">
                 <div class="box-work">
-                  <img src="img/Placeholder.png" alt="work photo">
+                  <img src="img/Rectangle 34.png" alt="work photo">
                   <p class="work-name">تصميم تجربة المستخدم لتطبيق مستقل</p>
                 </div>
               </div>
               <div class="col-6 col-6">
                 <div class="box-work">
-                  <img src="img/Placeholder.png" alt="work photo">
+                  <img src="img/Rectangle 34.png" alt="work photo">
                   <p class="work-name">تصميم تجربة المستخدم لتطبيق مستقل</p>
                 </div>
               </div>
               <div class="col-6 col-6">
                 <div class="box-work">
-                  <img src="img/Placeholder.png" alt="work photo">
+                  <img src="img/Rectangle 34.png" alt="work photo">
                   <p class="work-name">تصميم تجربة المستخدم لتطبيق مستقل</p>
                 </div>
               </div>
               <div class="col-6 col-6">
                 <div class="box-work">
-                  <img src="img/Placeholder.png" alt="work photo">
+                  <img src="img/Rectangle 34.png" alt="work photo">
                   <p class="work-name">تصميم تجربة المستخدم لتطبيق مستقل</p>
                 </div>
               </div>
               <div class="col-12 col-12">
-                <div class="btn-holder w-100 d-flex justify-content-center align-items-center">
+                <div class="btn-holder mt-5 w-100 d-flex justify-content-center align-items-center">
                   <button class="more-work-btn">عرض جميع الأعمال</button>
                 </div>
               </div>

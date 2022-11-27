@@ -36,14 +36,13 @@ box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
     -webkit-border-radius: 0 !important;
     -moz-border-radius: 0 !important;
     -ms-border-radius: 0 !important;
-    color: #afb1b6 !important;
+    color: $light-gray !important;
     -o-border-radius: 0 !important;
-    background: #fbfbfb !important;
-    border-bottom: 1px solid #afb1b6 !important;
+    background: transparent!important;
+    border-bottom: 1.5px solid #EFEFF0!important;
     &.active {
-      background: #efeff0 !important;
-      border-bottom: 1px solid #19191b !important;
-      color: #19191b !important;
+      border-bottom: 1px solid $alt-color !important;
+      color: $alt-color !important;
     }
   }
 }
