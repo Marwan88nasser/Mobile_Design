@@ -44,6 +44,24 @@
   display: inline-block;
 }
 
+.more-work-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 84px;
+  gap: 10px;
+  width: 286px;
+  height: 51px;
+  background: $subtle-dark;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 27px;
+  letter-spacing: 0.12px;
+  color: #efeff0;
+}
+
 .sections-list {
   .section-item {
     .item {
