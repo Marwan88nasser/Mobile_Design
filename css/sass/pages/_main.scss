@@ -1,25 +1,25 @@
 // Start page-profile
 .page-profile {
-    .info-user {
-     margin-bottom: 32px;
-        .img-user {
-            width: 74px;
-            height: 74px;
-            border-radius: 50%;
-            -webkit-border-radius: 50%;
-            -moz-border-radius: 50%;
-            -ms-border-radius: 50%;
-            -o-border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 4px;
-        }
-        .name {
-         color: black;
-         font-size: 16px;
-        }
-        .info {
-         font-size: 12px;
-        }
+  .info-user {
+    margin-bottom: 32px;
+    .img-user {
+      width: 74px;
+      height: 74px;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 4px;
     }
+    .name {
+      color: black;
+      font-size: 16px;
+    }
+    .info-data {
+      font-size: 12px;
+    }
+  }
 }
 // End page-profile

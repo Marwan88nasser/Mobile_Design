@@ -440,7 +440,7 @@
   color: #efeff0;
 }
 
-.box-info .info {
+.box-info .info-1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -455,7 +455,7 @@
           justify-content: flex-start;
   gap: 7px;
 }
-.box-info .info .text {
+.box-info .info-1 .text {
   font-weight: 400;
   font-size: 14px;
   line-height: 23px;
@@ -581,10 +581,28 @@
   background: #F4F4F5;
   border-radius: 8px;
 }
-.box-date .info {
+
+.balance-box .text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 23px;
+  letter-spacing: 0.12px;
+  color: #61646b;
+}
+.balance-box .num {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.16px;
+  color: #19191b;
+}
+
+.info {
+  background: #F4F4F5;
+  border-radius: 8px;
   text-align: center;
 }
-.box-date .info .text {
+.info .text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -595,6 +613,20 @@
       -ms-flex-pack: center;
           justify-content: center;
   gap: 9px;
+}
+.info .text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 23px;
+  letter-spacing: 0.12px;
+  color: #61646b;
+}
+.info .num {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.16px;
+  color: #19191b;
 }
 
 .show-projects .img {
@@ -1009,7 +1041,7 @@ input:focus::placeholder {
   color: black;
   font-size: 16px;
 }
-.page-profile .info-user .info {
+.page-profile .info-user .info-data {
   font-size: 12px;
 }
 
