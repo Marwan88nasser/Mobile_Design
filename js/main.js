@@ -27,3 +27,19 @@ if (document.querySelectorAll('#text-more #text')) {
     text.innerHTML = text.textContent.substr(0,160) + '...';
   })
 }
+
+// set chart js bar
+const ctx = document.getElementById('myChart');
+
+  new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: ['', '', '', '', '', ''],
+      datasets: [{
+        label: '',
+        data: [12, 19, 3, 5, 2, 3],
+        borderWidth: 1,
+        backgroundColor: 'rgba(217, 217, 217, 0) 100%);'
+      }]
+    },
+  });
