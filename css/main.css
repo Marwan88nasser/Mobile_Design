@@ -1916,7 +1916,6 @@ input:focus::placeholder {
 .landing-swiper .swiper-pagination-bullet-active {
   opacity: 1 !important;
   background-color: #3792e5 !important;
-<<<<<<< HEAD
 }
 
 .swiper-design {
@@ -1930,7 +1929,4 @@ input:focus::placeholder {
 .swiper-design .swiper-wrapper .swiper-slide img {
   width: 100%;
   height: 100%;
-}/*# sourceMappingURL=main.css.map */
-=======
 }
->>>>>>> 2027da4259508174b45c0c8fe6b56bb05394523b
