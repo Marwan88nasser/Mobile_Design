@@ -38,7 +38,7 @@
 }
 
 #btn-more {
-  color: #19191b;
+  color: $alt-color;
   font-size: 14px;
   font-weight: 600;
   display: inline-block;
@@ -115,15 +115,34 @@
 }
 
 .btn-icon {
- display: flex;
-justify-content: center;
-align-items: center;
-padding: 8px 16px;
-gap: 5.6px;
-font-size: 12px;
-color: white;
-background-color: $light-gray;
-border: 0;
-outline: 0;
-border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  gap: 5.6px;
+  font-size: 12px;
+  color: white;
+  background-color: $light-gray;
+  border: 0;
+  outline: 0;
+  border-radius: 8px;
+}
+
+.btn-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 32px;
+  width: 99px;
+  height: 35px;
+  background: #fbfbfb;
+  border: 1px solid $main-color;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 23px;
+  text-align: right;
+  letter-spacing: 0.12px;
+  color: $main-color;
 }

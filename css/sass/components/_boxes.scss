@@ -145,7 +145,7 @@
     @include flex-center;
     padding: 4px 20px;
     gap: 10px;
-    background: #61646b;
+    background: $alt-color;
     border-radius: 8px;
     font-weight: 400;
     font-size: 11px;
@@ -366,23 +366,47 @@
     opacity: 0;
     width: 100%;
     height: 100%;
-    cursor: pointer
-    
+    cursor: pointer;
   }
 }
 .box-send {
   position: fixed;
-width: 100%;
-left: 0px;
-bottom: 0;
-background: #EFEFF0;
-padding:0.6rem 1rem;
-display: flex;
-align-items: stretch;
-gap: 12px;
+  width: 100%;
+  left: 0px;
+  bottom: 0;
+  background: #efeff0;
+  padding: 0.6rem 1rem;
+  display: flex;
+  align-items: stretch;
+  gap: 12px;
+  .box-textarea {
+    flex: 1;
+    background: #e0e0e0;
+    border-radius: 8px;
+    textarea {
+      width: 100%;
+      padding: 0.6rem 1rem;
+      resize: none;
+      border: 0 !important;
+      outline: 0 !important;
+      background: transparent !important;
+    }
+  }
+}
+.inp-file {
+  position: relative;
+  width: 100%;
+  left: 0px;
+  bottom: 0;
+  background: #efeff0;
+  padding: 0.6rem 1rem;
+  display: flex;
+  align-items: stretch;
+  gap: 12px;
+}
 .box-textarea {
   flex: 1;
-  background: #E0E0E0;
+  background: #e0e0e0;
   position: relative;
   border-radius: 8px;
   .inp-file {
@@ -394,57 +418,55 @@ gap: 12px;
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
-}
+  }
   textarea {
     width: 100%;
-    padding:0.6rem 1rem;
+    padding: 0.6rem 1rem;
     padding-right: calc(1rem + 35px);
     resize: none;
-  border: 0 !important;
-  outline: 0 !important;
-  background: transparent !important;
-  &::-webkit-input-placeholder {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-}
-&:-moz-placeholder {
-  /* Firefox 18- */
+    border: 0 !important;
+    outline: 0 !important;
+    background: transparent !important;
+    &::-webkit-input-placeholder {
       position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-}
-&::-moz-placeholder {
-  /* Firefox 19+ */
+      top: 50%;
+      transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+    }
+    &:-moz-placeholder {
+      /* Firefox 18- */
       position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-}
-&:-ms-input-placeholder {
+      top: 50%;
+      transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+    }
+    &::-moz-placeholder {
+      /* Firefox 19+ */
       position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
+      top: 50%;
+      transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+    }
+    &:-ms-input-placeholder {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+    }
+  }
 }
-}
-}
-}
-
 
 .workLink-box {
   @include flex-center;
@@ -479,6 +501,40 @@ gap: 12px;
       line-height: 24px;
       letter-spacing: 0.6px;
       color: #61646b;
+    }
+  }
+}
+
+.work-info-box {
+  @include flex-center;
+  gap: 5px;
+  .data-text {
+    .text {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 27px;
+      letter-spacing: 0.12px;
+      color: #4f4f50;
+      margin-bottom: 7px;
+    }
+  }
+  .statistics {
+    @include flex-center;
+    justify-content: flex-start;
+    gap: 20px;
+    .statistic-holder {
+      @include flex-center;
+      gap: 3px;
+      img {
+        width: 19px;
+      }
+      span {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 27px;
+        letter-spacing: 0.08px;
+        color: #61646b;
+      }
     }
   }
 }
