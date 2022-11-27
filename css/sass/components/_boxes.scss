@@ -292,3 +292,41 @@ border-radius: 8px;
 
 }
 }
+.chats {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  .box-chat {
+    .head-caht {
+      .name-and-img {
+        align-items: flex-start !important;
+        .img {
+          width: 40px !important;
+          height: 40px !important;
+        }
+        .name {
+          font-size: 14px !important;
+          color: $lg-dark !important;
+          font-weight: bold;
+        }
+      }
+      .time {
+        font-size: 12px;
+      }
+    }
+    .content {
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 24px;
+    }
+  }
+}
+.box-send {
+  position: fixed;
+width: 100%;
+height: 66px;
+left: 0px;
+bottom: 0;
+background: #EFEFF0;
+padding: 1rem;
+}

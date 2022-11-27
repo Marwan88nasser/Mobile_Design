@@ -613,6 +613,49 @@
   font-size: 12px;
 }
 
+.chats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 24px;
+}
+.chats .box-chat .head-caht .name-and-img {
+  -webkit-box-align: start !important;
+      -ms-flex-align: start !important;
+          align-items: flex-start !important;
+}
+.chats .box-chat .head-caht .name-and-img .img {
+  width: 40px !important;
+  height: 40px !important;
+}
+.chats .box-chat .head-caht .name-and-img .name {
+  font-size: 14px !important;
+  color: #19191B !important;
+  font-weight: bold;
+}
+.chats .box-chat .head-caht .time {
+  font-size: 12px;
+}
+.chats .box-chat .content {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.box-send {
+  position: fixed;
+  width: 100%;
+  height: 66px;
+  left: 0px;
+  bottom: 0;
+  background: #EFEFF0;
+  padding: 1rem;
+}
+
 .box-icon-inp {
   position: relative;
 }
