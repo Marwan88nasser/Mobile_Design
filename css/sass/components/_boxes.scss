@@ -246,6 +246,28 @@
   display: flex;
   align-items: center;
   gap: 8px;
+  &.def-location {
+    .img {
+      width: 50px;
+      height: 50px;
+    }
+    .name {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 27px;
+      letter-spacing: 0.12px;
+      color: #4f4f50;
+    }
+    .location {
+      span {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 23px;
+        letter-spacing: 0.12px;
+        color: #afb1b6;
+      }
+    }
+  }
   .img {
     width: 28px;
     height: 28px;
@@ -268,6 +290,25 @@
 }
 
 .balance-box {
+  &.data {
+    @include flex-center;
+    justify-content: flex-start;
+    gap: 4px;
+    .text {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 27px;
+      letter-spacing: 0.12px;
+      color: #4f4f50;
+    }
+    span {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 27px;
+      letter-spacing: 0.12px;
+      color: #afb1b6;
+    }
+  }
   .text {
     font-weight: 500;
     font-size: 12px;
