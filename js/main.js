@@ -21,15 +21,16 @@ AOS.init();
 
 // Start Text More
 if (document.querySelectorAll('#text-more #text')) {
-  let oldContent='';
-  document.querySelectorAll('#text-more #text').forEach(text=>{
+  let oldContent = '';
+  document.querySelectorAll('#text-more #text').forEach(text => {
     oldContent = text.textContent;
-    text.innerHTML = text.textContent.substr(0,160) + '...';
+    text.innerHTML = text.textContent.substr(0, 160) + '...';
   })
 }
 
 // set chart js bar
-const ctx = document.getElementById('myChart');
+if (document.getElementById('myChart')) {
+  const ctx = document.getElementById('myChart');
 
   new Chart(ctx, {
     type: 'line',
@@ -43,3 +44,4 @@ const ctx = document.getElementById('myChart');
       }]
     },
   });
+}
