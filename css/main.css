@@ -35,8 +35,18 @@
   color: #87BEEF;
 }
 
+.text-gold-color {
+  color: #FBBC05;
+}
+
 .fs-12 {
   font-size: 12px;
+}
+
+.w-fit {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .main-btn {
@@ -87,15 +97,14 @@
   -webkit-border-radius: 0 !important;
   -moz-border-radius: 0 !important;
   -ms-border-radius: 0 !important;
-  color: #afb1b6 !important;
+  color: #AFB1B6 !important;
   -o-border-radius: 0 !important;
-  background: #fbfbfb !important;
-  border-bottom: 1px solid #afb1b6 !important;
+  background: transparent !important;
+  border-bottom: 1.5px solid #EFEFF0 !important;
 }
 .main-tab .nav-link.active {
-  background: #efeff0 !important;
-  border-bottom: 1px solid #19191b !important;
-  color: #19191b !important;
+  border-bottom: 1px solid #87BEEF !important;
+  color: #87BEEF !important;
 }
 
 #btn-more {
@@ -566,9 +575,9 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-bottom: 10px;
 }
 .box-rate .main-info span {
@@ -577,6 +586,17 @@
   line-height: 27px;
   letter-spacing: 0.12px;
   color: #61646B;
+}
+.box-rate .main-info .image-holder img {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .box-rate .date-rate {
   display: -webkit-box;
@@ -1388,6 +1408,7 @@ input:focus::placeholder {
   font-weight: 500;
   font-size: 14px;
   line-height: 27px;
+  margin-bottom: 6px;
   letter-spacing: 0.12px;
   color: #61646B;
 }
@@ -1396,11 +1417,16 @@ input:focus::placeholder {
   color: #AFB1B6;
   font-size: 14.62px;
 }
+.rates .rate .icon-holder i.active,
+.rates .rate .icon-holder svg.active {
+  color: #FBBC05;
+}
 .rates .rate.special h2 {
   font-weight: 600;
   font-size: 18px;
   line-height: 34px;
   letter-spacing: 0.004em;
+  margin-bottom: 16px;
   color: #19191B;
 }
 .rates .rate.special .icon-holder i,
@@ -1566,7 +1592,15 @@ input:focus::placeholder {
 .page-profile .info-user {
   margin-bottom: 32px;
 }
-.page-profile .info-user .img-user {
+.page-profile .info-user .img {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 4px;
+}
+.page-profile .info-user .img .img-user {
   width: 74px;
   height: 74px;
   border-radius: 50%;
@@ -1576,7 +1610,22 @@ input:focus::placeholder {
   -o-border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
-  margin-bottom: 4px;
+}
+.page-profile .info-user .img .cr-active {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  left: 4px;
+  bottom: 4px;
+  border-radius: 50%;
+  /*Green*/
+  background: #34A853;
+  /*surface*/
+  border: 2px solid #FBFBFB;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 .page-profile .info-user .name {
   color: black;

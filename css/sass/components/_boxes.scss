@@ -187,7 +187,7 @@
   }
   .main-info {
     @include flex-center;
-    justify-content: flex-start;
+    justify-content: space-between;
     margin-bottom: 10px;
     span {
       font-weight: 500;
@@ -195,6 +195,18 @@
       line-height: 27px;
       letter-spacing: 0.12px;
       color: $subtle-dark;
+    }
+    .image-holder {
+      img {
+        width: 54px;
+        height: 54px;
+        border-radius: 50%      ;
+        -webkit-border-radius: 50%      ;
+        -moz-border-radius: 50%      ;
+        -ms-border-radius: 50%      ;
+        -o-border-radius: 50%      ;
+        object-fit: cover
+}
     }
   }
   .date-rate {
